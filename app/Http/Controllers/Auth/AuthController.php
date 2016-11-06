@@ -8,7 +8,7 @@ use Auth;
 use Exception;
 class AuthController extends Controller
 {
-  public function redirectToLinkedin()
+    public function redirectToLinkedin()
     {
         return Socialite::driver('linkedin')->redirect();
     }
@@ -22,7 +22,7 @@ class AuthController extends Controller
         } 
         catch (Exception $e) 
         {
-            return redirect('auth/linkedin');
+            return redirect()->route('authlinkedin');
         }
     }
 
@@ -39,7 +39,7 @@ class AuthController extends Controller
         } 
         catch (Exception $e) 
         {
-            return redirect('auth/twitter');
+            return redirect()->route('authtwitter');
         }
     }
 
@@ -56,7 +56,7 @@ class AuthController extends Controller
         } 
         catch (Exception $e) 
         {
-            return redirect('auth/google');
+            return redirect()->route('authgoogle');
         }
     }
 
@@ -73,7 +73,7 @@ class AuthController extends Controller
         } 
         catch (Exception $e) 
         {
-            return redirect('auth/facebook');
+            return redirect()->route('authfacebook');
         }
     }
 }

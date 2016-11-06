@@ -39,16 +39,16 @@
  
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <a href="{{ url('auth/twitter') }}" class="btn btn-primary">
+                                <a href="{{route('authtwitter')}}" class="btn btn-primary">
                                     <strong>Login With Twitter</strong>
                                 </a>
-                                <a href="{{ url('auth/linkedin') }}" class="btn btn-primary">
+                                <a href="{{route('authlinkedin')}}" class="btn btn-primary">
                                     <strong>Login With Linkedin</strong>
                                 </a>
-                                <a href="{{ url('auth/google') }}" class="btn btn-primary">
+                                <a href="{{route('authgoogle')}}" class="btn btn-primary">
                                     <strong>Login With Google</strong>
                                 </a>
-                                <a href="{{ url('auth/facebook') }}" class="btn btn-primary">
+                                <a href="{{route('authfacebook')}}" class="btn btn-primary">
                                     <strong>Login With Facebook</strong>
                                 </a>
 
